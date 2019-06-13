@@ -67,10 +67,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\CategoriasClass.vb" />
+    <Compile Include="Clases\Clientes.vb" />
     <Compile Include="Clases\ProductosClass.vb" />
     <Compile Include="Clases\ProveedorServicioClass.vb" />
     <Compile Include="Clases\ProveedoresClass.vb" />
-    <Compile Include="Clases\conexion.vb" />
+    <Compile Include="Conexion.vb" />
     <Compile Include="Forms\Categorias1.Designer.vb">
       <DependentUpon>Categorias1.vb</DependentUpon>
     </Compile>
@@ -81,6 +82,18 @@
       <DependentUpon>Categorias2.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\Categorias2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ClientesForm.Designer.vb">
+      <DependentUpon>ClientesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ClientesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ClientesGrid.Designer.vb">
+      <DependentUpon>ClientesGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ClientesGrid.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Productos1.Designer.vb">
@@ -120,6 +133,12 @@
     <Compile Include="Forms\ProveedorServicio2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormularioPrincipal.Designer.vb">
+      <DependentUpon>FormularioPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -143,6 +162,12 @@
     <EmbeddedResource Include="Forms\Categorias2.resx">
       <DependentUpon>Categorias2.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ClientesForm.resx">
+      <DependentUpon>ClientesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ClientesGrid.resx">
+      <DependentUpon>ClientesGrid.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Productos1.resx">
       <DependentUpon>Productos1.vb</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +186,9 @@
     <EmbeddedResource Include="Forms\ProveedorServicio2.resx">
       <DependentUpon>ProveedorServicio2.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormularioPrincipal.resx">
+      <DependentUpon>FormularioPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -178,6 +206,9 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\condimentos %281%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
