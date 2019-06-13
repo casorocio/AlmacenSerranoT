@@ -1,7 +1,7 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
 Public Class CategoriasClass
-    Inherits conexion
+    Inherits Conexion1
     Dim Id_ As Integer
     Dim Tipo_ As String
 
