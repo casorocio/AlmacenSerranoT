@@ -2,7 +2,7 @@
 Imports System.Data.SqlClient
 
 Public Class Clientes
-    Inherits Conexion1
+    Inherits Conexion
     Dim Id_ As Integer
     Dim Apellido_ As String
     Dim Nombre_ As String

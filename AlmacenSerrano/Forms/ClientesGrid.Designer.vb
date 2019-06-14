@@ -33,14 +33,17 @@ Partial Class ClientesGrid
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.EnableHeadersVisualStyles = False
         Me.DataGridView1.Location = New System.Drawing.Point(12, 21)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(403, 193)
+        Me.DataGridView1.RowHeadersVisible = False
+        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataGridView1.Size = New System.Drawing.Size(649, 254)
         Me.DataGridView1.TabIndex = 0
         '
         'Agregar
         '
-        Me.Agregar.Location = New System.Drawing.Point(24, 226)
+        Me.Agregar.Location = New System.Drawing.Point(63, 293)
         Me.Agregar.Name = "Agregar"
         Me.Agregar.Size = New System.Drawing.Size(75, 23)
         Me.Agregar.TabIndex = 1
@@ -49,7 +52,7 @@ Partial Class ClientesGrid
         '
         'Modificar
         '
-        Me.Modificar.Location = New System.Drawing.Point(119, 226)
+        Me.Modificar.Location = New System.Drawing.Point(284, 293)
         Me.Modificar.Name = "Modificar"
         Me.Modificar.Size = New System.Drawing.Size(75, 23)
         Me.Modificar.TabIndex = 2
@@ -58,7 +61,7 @@ Partial Class ClientesGrid
         '
         'Eliminar
         '
-        Me.Eliminar.Location = New System.Drawing.Point(214, 226)
+        Me.Eliminar.Location = New System.Drawing.Point(510, 293)
         Me.Eliminar.Name = "Eliminar"
         Me.Eliminar.Size = New System.Drawing.Size(75, 23)
         Me.Eliminar.TabIndex = 3
@@ -67,24 +70,27 @@ Partial Class ClientesGrid
         '
         'Cancelar
         '
-        Me.Cancelar.Location = New System.Drawing.Point(308, 226)
+        Me.Cancelar.BackColor = System.Drawing.Color.SandyBrown
+        Me.Cancelar.Location = New System.Drawing.Point(586, 335)
         Me.Cancelar.Name = "Cancelar"
-        Me.Cancelar.Size = New System.Drawing.Size(75, 23)
+        Me.Cancelar.Size = New System.Drawing.Size(75, 29)
         Me.Cancelar.TabIndex = 4
         Me.Cancelar.Text = "Cancelar"
-        Me.Cancelar.UseVisualStyleBackColor = True
+        Me.Cancelar.UseVisualStyleBackColor = False
         '
         'ClientesGrid
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(427, 261)
+        Me.BackColor = System.Drawing.Color.DarkKhaki
+        Me.ClientSize = New System.Drawing.Size(676, 385)
         Me.Controls.Add(Me.Cancelar)
         Me.Controls.Add(Me.Eliminar)
         Me.Controls.Add(Me.Modificar)
         Me.Controls.Add(Me.Agregar)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "ClientesGrid"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ClientesGrid"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

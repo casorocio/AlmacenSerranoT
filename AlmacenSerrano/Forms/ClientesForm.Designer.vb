@@ -164,17 +164,19 @@ Partial Class ClientesForm
         '
         'Cancelar
         '
+        Me.Cancelar.BackColor = System.Drawing.Color.SandyBrown
         Me.Cancelar.Location = New System.Drawing.Point(245, 266)
         Me.Cancelar.Name = "Cancelar"
         Me.Cancelar.Size = New System.Drawing.Size(75, 32)
         Me.Cancelar.TabIndex = 31
         Me.Cancelar.Text = "Cancelar"
-        Me.Cancelar.UseVisualStyleBackColor = True
+        Me.Cancelar.UseVisualStyleBackColor = False
         '
         'ClientesForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.DarkOliveGreen
         Me.ClientSize = New System.Drawing.Size(391, 314)
         Me.Controls.Add(Me.Cancelar)
         Me.Controls.Add(Me.Aceptar)
@@ -193,6 +195,7 @@ Partial Class ClientesForm
         Me.Controls.Add(Me.TxtNombre)
         Me.Controls.Add(Me.TxtApellido)
         Me.Name = "ClientesForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ClientesForm"
         Me.ResumeLayout(False)
         Me.PerformLayout()

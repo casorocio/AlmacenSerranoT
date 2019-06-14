@@ -60,6 +60,7 @@ Partial Class FormularioPrincipal
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "FormularioPrincipal"
         Me.Text = "FormularioPrincipal"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
