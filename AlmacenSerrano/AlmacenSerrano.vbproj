@@ -71,7 +71,6 @@
     <Compile Include="Clases\ProductosClass.vb" />
     <Compile Include="Clases\ProveedorServicioClass.vb" />
     <Compile Include="Clases\ProveedoresClass.vb" />
-    <Compile Include="Conexion.vb" />
     <Compile Include="Forms\Categorias1.Designer.vb">
       <DependentUpon>Categorias1.vb</DependentUpon>
     </Compile>

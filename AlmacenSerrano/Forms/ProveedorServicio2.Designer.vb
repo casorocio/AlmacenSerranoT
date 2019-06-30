@@ -217,17 +217,19 @@ Partial Class ProveedorServicio2
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.Color.SandyBrown
         Me.Button2.Location = New System.Drawing.Point(304, 272)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 21
         Me.Button2.Text = "Cancelar"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
-        'ProveedorServicio
+        'ProveedorServicio2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.DarkOliveGreen
         Me.ClientSize = New System.Drawing.Size(416, 307)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -251,7 +253,7 @@ Partial Class ProveedorServicio2
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "ProveedorServicio"
+        Me.Name = "ProveedorServicio2"
         Me.Text = "ProveedorServicio"
         Me.ResumeLayout(False)
         Me.PerformLayout()

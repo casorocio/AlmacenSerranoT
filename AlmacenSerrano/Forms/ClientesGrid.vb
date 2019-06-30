@@ -3,7 +3,7 @@ Imports System.Data.SqlClient
 
 Public Class ClientesGrid
     Dim cli As New Clientes
-    Dim conex As New Conexion
+    Dim conex As New Conexion1
 
     Private Sub ClientesGrid_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         cli.LlenarTabla(DataGridView1)
@@ -27,6 +27,7 @@ Public Class ClientesGrid
         cli.Negocio = DataGridView1.Item("Negocio", DataGridView1.CurrentRow.Index).Value
 
         Dim ClientesForm As New ClientesForm(cli)
+
         ClientesForm.ShowDialog()
         cli.LlenarTabla(DataGridView1)
 

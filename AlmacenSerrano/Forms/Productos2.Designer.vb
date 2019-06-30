@@ -253,17 +253,19 @@ Partial Class Productos2
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.Color.SandyBrown
         Me.Button2.Location = New System.Drawing.Point(368, 292)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 25
         Me.Button2.Text = "Cancelar"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
-        'Productos
+        'Productos2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.DarkOliveGreen
         Me.ClientSize = New System.Drawing.Size(473, 327)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -291,7 +293,7 @@ Partial Class Productos2
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "Productos"
+        Me.Name = "Productos2"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
         Me.PerformLayout()

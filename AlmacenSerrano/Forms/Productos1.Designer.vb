@@ -23,11 +23,10 @@ Partial Class Productos1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.Button2 = New System.Windows.Forms.Button
-        Me.Button3 = New System.Windows.Forms.Button
-        Me.Button4 = New System.Windows.Forms.Button
-        Me.Button5 = New System.Windows.Forms.Button
+        Me.btnCancelar = New System.Windows.Forms.Button
+        Me.btnModificar = New System.Windows.Forms.Button
+        Me.btnEliminar = New System.Windows.Forms.Button
+        Me.btnAgregar = New System.Windows.Forms.Button
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -39,61 +38,53 @@ Partial Class Productos1
         Me.DataGridView1.Size = New System.Drawing.Size(648, 204)
         Me.DataGridView1.TabIndex = 0
         '
-        'Button1
+        'btnCancelar
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 313)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnCancelar.BackColor = System.Drawing.Color.SandyBrown
+        Me.btnCancelar.Location = New System.Drawing.Point(585, 313)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancelar.TabIndex = 2
+        Me.btnCancelar.Text = "Cancelar"
+        Me.btnCancelar.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnModificar
         '
-        Me.Button2.Location = New System.Drawing.Point(585, 313)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnModificar.Location = New System.Drawing.Point(290, 255)
+        Me.btnModificar.Name = "btnModificar"
+        Me.btnModificar.Size = New System.Drawing.Size(75, 23)
+        Me.btnModificar.TabIndex = 4
+        Me.btnModificar.Text = "Modificar"
+        Me.btnModificar.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnEliminar
         '
-        Me.Button3.Location = New System.Drawing.Point(85, 255)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 3
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnEliminar.Location = New System.Drawing.Point(508, 255)
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
+        Me.btnEliminar.TabIndex = 5
+        Me.btnEliminar.Text = "Eliminar"
+        Me.btnEliminar.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnAgregar
         '
-        Me.Button4.Location = New System.Drawing.Point(290, 255)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 4
-        Me.Button4.Text = "Button4"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(508, 255)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
-        Me.Button5.TabIndex = 5
-        Me.Button5.Text = "Button5"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btnAgregar.Location = New System.Drawing.Point(85, 255)
+        Me.btnAgregar.Name = "btnAgregar"
+        Me.btnAgregar.Size = New System.Drawing.Size(75, 23)
+        Me.btnAgregar.TabIndex = 3
+        Me.btnAgregar.Text = "Agregar"
+        Me.btnAgregar.UseVisualStyleBackColor = True
         '
         'Productos1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.DarkKhaki
         Me.ClientSize = New System.Drawing.Size(672, 348)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnEliminar)
+        Me.Controls.Add(Me.btnModificar)
+        Me.Controls.Add(Me.btnAgregar)
+        Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "Productos1"
         Me.Text = "Productos1"
@@ -102,9 +93,8 @@ Partial Class Productos1
 
     End Sub
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents btnCancelar As System.Windows.Forms.Button
+    Friend WithEvents btnModificar As System.Windows.Forms.Button
+    Friend WithEvents btnEliminar As System.Windows.Forms.Button
+    Friend WithEvents btnAgregar As System.Windows.Forms.Button
 End Class
