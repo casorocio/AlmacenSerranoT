@@ -54,7 +54,7 @@ Public Class CategoriasClass
         Dim sqlcomando As New SqlCommand("CategoriaAgregar", conex.sqlconexion)
         sqlcomando.CommandType = CommandType.StoredProcedure
 
-        sqlcomando.Parameters.AddWithValue("ID", Categoria.ID)
+        sqlcomando.Parameters.AddWithValue("Id", Categoria.Id)
         sqlcomando.Parameters.AddWithValue("Tipo", Categoria.Tipo)
         sqlcomando.ExecuteNonQuery()
         conex.cerrar()
@@ -78,6 +78,28 @@ Public Class CategoriasClass
 
 
         conex.cerrar()
+
+    End Sub
+
+    Public Sub CargarCombo(ByVal combo As ComboBox)
+        Dim conex As New conexion1
+        conex.Abrir()
+
+        Dim objcomando As New SqlCommand("CategoriaCombo", sqlconexion)
+        objcomando.CommandType = CommandType.StoredProcedure
+        Dim objdatatable As New Data.DataTable
+        Dim objdataadapter As New SqlDataAdapter(objcomando)
+        objdataadapter.Fill(objdatatable)
+
+        With combo
+            .DataSource = objdatatable
+            .DisplayMember = "Tipo"
+            .ValueMember = "Id"
+
+        End With
+
+        conex.cerrar()
+
 
     End Sub
 End Class

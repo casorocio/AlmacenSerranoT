@@ -184,4 +184,6 @@ Public Class ProductosClass
         conex.cerrar()
 
     End Sub
+
+    
 End Class

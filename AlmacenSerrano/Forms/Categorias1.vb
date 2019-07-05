@@ -24,13 +24,13 @@ Public Class Categorias1
         Categoria.Id = DataGridView1.Item("Id", DataGridView1.CurrentRow.Index).Value
         Categoria.Tipo = DataGridView1.Item("Tipo", DataGridView1.CurrentRow.Index).Value
 
-        Dim Categorias2 As New Categorias2()
+        Dim Categorias2 As New Categorias2(Categoria)
         Categorias2.ShowDialog()
         LLenarTabla(DataGridView1)
     End Sub
 
     Private Sub btnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
-        Dim Categorias2 As New Categorias2
+        Dim Categorias2 As New Categorias2(Categoria)
         Categorias2.ShowDialog()
     End Sub
 

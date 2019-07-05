@@ -32,18 +32,18 @@ Partial Class ProveedorServicio2
         Me.Label8 = New System.Windows.Forms.Label
         Me.Label9 = New System.Windows.Forms.Label
         Me.Label10 = New System.Windows.Forms.Label
-        Me.TextBox1 = New System.Windows.Forms.TextBox
-        Me.TextBox2 = New System.Windows.Forms.TextBox
-        Me.TextBox3 = New System.Windows.Forms.TextBox
-        Me.TextBox4 = New System.Windows.Forms.TextBox
-        Me.TextBox5 = New System.Windows.Forms.TextBox
-        Me.TextBox6 = New System.Windows.Forms.TextBox
-        Me.TextBox7 = New System.Windows.Forms.TextBox
-        Me.TextBox8 = New System.Windows.Forms.TextBox
-        Me.TextBox9 = New System.Windows.Forms.TextBox
-        Me.TextBox10 = New System.Windows.Forms.TextBox
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.Button2 = New System.Windows.Forms.Button
+        Me.TextId = New System.Windows.Forms.TextBox
+        Me.TextTipo = New System.Windows.Forms.TextBox
+        Me.TextCompania = New System.Windows.Forms.TextBox
+        Me.TextApellido = New System.Windows.Forms.TextBox
+        Me.TextNombre = New System.Windows.Forms.TextBox
+        Me.TextEmail = New System.Windows.Forms.TextBox
+        Me.TextTelefono = New System.Windows.Forms.TextBox
+        Me.TextDireccion = New System.Windows.Forms.TextBox
+        Me.TextTipodepago = New System.Windows.Forms.TextBox
+        Me.TextNota = New System.Windows.Forms.TextBox
+        Me.Aceptar = New System.Windows.Forms.Button
+        Me.Cancelar = New System.Windows.Forms.Button
         Me.SuspendLayout()
         '
         'Label1
@@ -136,94 +136,94 @@ Partial Class ProveedorServicio2
         Me.Label10.TabIndex = 9
         Me.Label10.Text = "Nota"
         '
-        'TextBox1
+        'TextId
         '
-        Me.TextBox1.Location = New System.Drawing.Point(93, 48)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 10
+        Me.TextId.Location = New System.Drawing.Point(93, 48)
+        Me.TextId.Name = "TextId"
+        Me.TextId.Size = New System.Drawing.Size(100, 20)
+        Me.TextId.TabIndex = 10
         '
-        'TextBox2
+        'TextTipo
         '
-        Me.TextBox2.Location = New System.Drawing.Point(93, 77)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 11
+        Me.TextTipo.Location = New System.Drawing.Point(93, 77)
+        Me.TextTipo.Name = "TextTipo"
+        Me.TextTipo.Size = New System.Drawing.Size(100, 20)
+        Me.TextTipo.TabIndex = 11
         '
-        'TextBox3
+        'TextCompania
         '
-        Me.TextBox3.Location = New System.Drawing.Point(93, 103)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 12
+        Me.TextCompania.Location = New System.Drawing.Point(93, 103)
+        Me.TextCompania.Name = "TextCompania"
+        Me.TextCompania.Size = New System.Drawing.Size(100, 20)
+        Me.TextCompania.TabIndex = 12
         '
-        'TextBox4
+        'TextApellido
         '
-        Me.TextBox4.Location = New System.Drawing.Point(93, 130)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 13
+        Me.TextApellido.Location = New System.Drawing.Point(93, 130)
+        Me.TextApellido.Name = "TextApellido"
+        Me.TextApellido.Size = New System.Drawing.Size(100, 20)
+        Me.TextApellido.TabIndex = 13
         '
-        'TextBox5
+        'TextNombre
         '
-        Me.TextBox5.Location = New System.Drawing.Point(93, 156)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox5.TabIndex = 14
+        Me.TextNombre.Location = New System.Drawing.Point(93, 156)
+        Me.TextNombre.Name = "TextNombre"
+        Me.TextNombre.Size = New System.Drawing.Size(100, 20)
+        Me.TextNombre.TabIndex = 14
         '
-        'TextBox6
+        'TextEmail
         '
-        Me.TextBox6.Location = New System.Drawing.Point(304, 48)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox6.TabIndex = 15
+        Me.TextEmail.Location = New System.Drawing.Point(304, 48)
+        Me.TextEmail.Name = "TextEmail"
+        Me.TextEmail.Size = New System.Drawing.Size(100, 20)
+        Me.TextEmail.TabIndex = 15
         '
-        'TextBox7
+        'TextTelefono
         '
-        Me.TextBox7.Location = New System.Drawing.Point(304, 77)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox7.TabIndex = 16
+        Me.TextTelefono.Location = New System.Drawing.Point(304, 77)
+        Me.TextTelefono.Name = "TextTelefono"
+        Me.TextTelefono.Size = New System.Drawing.Size(100, 20)
+        Me.TextTelefono.TabIndex = 16
         '
-        'TextBox8
+        'TextDireccion
         '
-        Me.TextBox8.Location = New System.Drawing.Point(304, 103)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox8.TabIndex = 17
+        Me.TextDireccion.Location = New System.Drawing.Point(304, 103)
+        Me.TextDireccion.Name = "TextDireccion"
+        Me.TextDireccion.Size = New System.Drawing.Size(100, 20)
+        Me.TextDireccion.TabIndex = 17
         '
-        'TextBox9
+        'TextTipodepago
         '
-        Me.TextBox9.Location = New System.Drawing.Point(304, 130)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox9.TabIndex = 18
+        Me.TextTipodepago.Location = New System.Drawing.Point(304, 130)
+        Me.TextTipodepago.Name = "TextTipodepago"
+        Me.TextTipodepago.Size = New System.Drawing.Size(100, 20)
+        Me.TextTipodepago.TabIndex = 18
         '
-        'TextBox10
+        'TextNota
         '
-        Me.TextBox10.Location = New System.Drawing.Point(304, 156)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox10.TabIndex = 19
+        Me.TextNota.Location = New System.Drawing.Point(304, 156)
+        Me.TextNota.Name = "TextNota"
+        Me.TextNota.Size = New System.Drawing.Size(100, 20)
+        Me.TextNota.TabIndex = 19
         '
-        'Button1
+        'Aceptar
         '
-        Me.Button1.Location = New System.Drawing.Point(93, 272)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 20
-        Me.Button1.Text = "Aceptar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Aceptar.Location = New System.Drawing.Point(93, 272)
+        Me.Aceptar.Name = "Aceptar"
+        Me.Aceptar.Size = New System.Drawing.Size(75, 23)
+        Me.Aceptar.TabIndex = 20
+        Me.Aceptar.Text = "Aceptar"
+        Me.Aceptar.UseVisualStyleBackColor = True
         '
-        'Button2
+        'Cancelar
         '
-        Me.Button2.BackColor = System.Drawing.Color.SandyBrown
-        Me.Button2.Location = New System.Drawing.Point(304, 272)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 21
-        Me.Button2.Text = "Cancelar"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.Cancelar.BackColor = System.Drawing.Color.SandyBrown
+        Me.Cancelar.Location = New System.Drawing.Point(304, 272)
+        Me.Cancelar.Name = "Cancelar"
+        Me.Cancelar.Size = New System.Drawing.Size(75, 23)
+        Me.Cancelar.TabIndex = 21
+        Me.Cancelar.Text = "Cancelar"
+        Me.Cancelar.UseVisualStyleBackColor = False
         '
         'ProveedorServicio2
         '
@@ -231,18 +231,18 @@ Partial Class ProveedorServicio2
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkOliveGreen
         Me.ClientSize = New System.Drawing.Size(416, 307)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox10)
-        Me.Controls.Add(Me.TextBox9)
-        Me.Controls.Add(Me.TextBox8)
-        Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Cancelar)
+        Me.Controls.Add(Me.Aceptar)
+        Me.Controls.Add(Me.TextNota)
+        Me.Controls.Add(Me.TextTipodepago)
+        Me.Controls.Add(Me.TextDireccion)
+        Me.Controls.Add(Me.TextTelefono)
+        Me.Controls.Add(Me.TextEmail)
+        Me.Controls.Add(Me.TextNombre)
+        Me.Controls.Add(Me.TextApellido)
+        Me.Controls.Add(Me.TextCompania)
+        Me.Controls.Add(Me.TextTipo)
+        Me.Controls.Add(Me.TextId)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
@@ -269,16 +269,16 @@ Partial Class ProveedorServicio2
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents TextId As System.Windows.Forms.TextBox
+    Friend WithEvents TextTipo As System.Windows.Forms.TextBox
+    Friend WithEvents TextCompania As System.Windows.Forms.TextBox
+    Friend WithEvents TextApellido As System.Windows.Forms.TextBox
+    Friend WithEvents TextNombre As System.Windows.Forms.TextBox
+    Friend WithEvents TextEmail As System.Windows.Forms.TextBox
+    Friend WithEvents TextTelefono As System.Windows.Forms.TextBox
+    Friend WithEvents TextDireccion As System.Windows.Forms.TextBox
+    Friend WithEvents TextTipodepago As System.Windows.Forms.TextBox
+    Friend WithEvents TextNota As System.Windows.Forms.TextBox
+    Friend WithEvents Aceptar As System.Windows.Forms.Button
+    Friend WithEvents Cancelar As System.Windows.Forms.Button
 End Class

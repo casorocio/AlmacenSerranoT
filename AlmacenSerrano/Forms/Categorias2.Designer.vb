@@ -24,10 +24,10 @@ Partial Class Categorias2
     Private Sub InitializeComponent()
         Me.ID = New System.Windows.Forms.Label
         Me.Label2 = New System.Windows.Forms.Label
-        Me.TextBox1 = New System.Windows.Forms.TextBox
-        Me.TextBox2 = New System.Windows.Forms.TextBox
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.Button2 = New System.Windows.Forms.Button
+        Me.TextId = New System.Windows.Forms.TextBox
+        Me.TextTipo = New System.Windows.Forms.TextBox
+        Me.Aceptar = New System.Windows.Forms.Button
+        Me.Cancelar = New System.Windows.Forms.Button
         Me.SuspendLayout()
         '
         'ID
@@ -48,38 +48,38 @@ Partial Class Categorias2
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Tipo"
         '
-        'TextBox1
+        'TextId
         '
-        Me.TextBox1.Location = New System.Drawing.Point(148, 29)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 2
+        Me.TextId.Location = New System.Drawing.Point(148, 29)
+        Me.TextId.Name = "TextId"
+        Me.TextId.Size = New System.Drawing.Size(100, 20)
+        Me.TextId.TabIndex = 2
         '
-        'TextBox2
+        'TextTipo
         '
-        Me.TextBox2.Location = New System.Drawing.Point(148, 87)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 3
+        Me.TextTipo.Location = New System.Drawing.Point(148, 87)
+        Me.TextTipo.Name = "TextTipo"
+        Me.TextTipo.Size = New System.Drawing.Size(100, 20)
+        Me.TextTipo.TabIndex = 3
         '
-        'Button1
+        'Aceptar
         '
-        Me.Button1.Location = New System.Drawing.Point(21, 227)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Aceptar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Aceptar.Location = New System.Drawing.Point(21, 227)
+        Me.Aceptar.Name = "Aceptar"
+        Me.Aceptar.Size = New System.Drawing.Size(75, 23)
+        Me.Aceptar.TabIndex = 4
+        Me.Aceptar.Text = "Aceptar"
+        Me.Aceptar.UseVisualStyleBackColor = True
         '
-        'Button2
+        'Cancelar
         '
-        Me.Button2.BackColor = System.Drawing.Color.SandyBrown
-        Me.Button2.Location = New System.Drawing.Point(186, 227)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 5
-        Me.Button2.Text = "Cancelar"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.Cancelar.BackColor = System.Drawing.Color.SandyBrown
+        Me.Cancelar.Location = New System.Drawing.Point(186, 227)
+        Me.Cancelar.Name = "Cancelar"
+        Me.Cancelar.Size = New System.Drawing.Size(75, 23)
+        Me.Cancelar.TabIndex = 5
+        Me.Cancelar.Text = "Cancelar"
+        Me.Cancelar.UseVisualStyleBackColor = False
         '
         'Categorias2
         '
@@ -87,10 +87,10 @@ Partial Class Categorias2
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkOliveGreen
         Me.ClientSize = New System.Drawing.Size(284, 262)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Cancelar)
+        Me.Controls.Add(Me.Aceptar)
+        Me.Controls.Add(Me.TextTipo)
+        Me.Controls.Add(Me.TextId)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ID)
         Me.Name = "Categorias2"
@@ -101,8 +101,8 @@ Partial Class Categorias2
     End Sub
     Friend WithEvents ID As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents TextId As System.Windows.Forms.TextBox
+    Friend WithEvents TextTipo As System.Windows.Forms.TextBox
+    Friend WithEvents Aceptar As System.Windows.Forms.Button
+    Friend WithEvents Cancelar As System.Windows.Forms.Button
 End Class

@@ -27,27 +27,25 @@ Partial Class Productos2
         Me.Label3 = New System.Windows.Forms.Label
         Me.Label4 = New System.Windows.Forms.Label
         Me.Label5 = New System.Windows.Forms.Label
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.TextBox1 = New System.Windows.Forms.TextBox
-        Me.TextBox2 = New System.Windows.Forms.TextBox
-        Me.TextBox3 = New System.Windows.Forms.TextBox
-        Me.TextBox4 = New System.Windows.Forms.TextBox
-        Me.TextBox5 = New System.Windows.Forms.TextBox
-        Me.TextBox6 = New System.Windows.Forms.TextBox
+        Me.TextId = New System.Windows.Forms.TextBox
+        Me.TextProducto = New System.Windows.Forms.TextBox
+        Me.TextDescripcion = New System.Windows.Forms.TextBox
+        Me.TextCantidad = New System.Windows.Forms.TextBox
         Me.Label7 = New System.Windows.Forms.Label
-        Me.TextBox7 = New System.Windows.Forms.TextBox
+        Me.TextPrecioCompra = New System.Windows.Forms.TextBox
         Me.Label8 = New System.Windows.Forms.Label
         Me.Label9 = New System.Windows.Forms.Label
         Me.Label10 = New System.Windows.Forms.Label
         Me.Label11 = New System.Windows.Forms.Label
         Me.Label12 = New System.Windows.Forms.Label
-        Me.TextBox8 = New System.Windows.Forms.TextBox
-        Me.TextBox9 = New System.Windows.Forms.TextBox
-        Me.TextBox10 = New System.Windows.Forms.TextBox
-        Me.TextBox11 = New System.Windows.Forms.TextBox
-        Me.TextBox12 = New System.Windows.Forms.TextBox
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.Button2 = New System.Windows.Forms.Button
+        Me.TextPrecioVenta = New System.Windows.Forms.TextBox
+        Me.TextPrecioxmayor = New System.Windows.Forms.TextBox
+        Me.TextIva = New System.Windows.Forms.TextBox
+        Me.TextCantMinInv = New System.Windows.Forms.TextBox
+        Me.Aceptar = New System.Windows.Forms.Button
+        Me.Cancelar = New System.Windows.Forms.Button
+        Me.ComboIdCategoria = New System.Windows.Forms.ComboBox
+        Me.ComboIdProveedor = New System.Windows.Forms.ComboBox
         Me.SuspendLayout()
         '
         'Label1
@@ -95,56 +93,33 @@ Partial Class Productos2
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Cantidad"
         '
-        'Label6
+        'TextId
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(12, 167)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(63, 13)
-        Me.Label6.TabIndex = 5
-        Me.Label6.Text = "Suspendido"
+        Me.TextId.Location = New System.Drawing.Point(92, 30)
+        Me.TextId.Name = "TextId"
+        Me.TextId.Size = New System.Drawing.Size(100, 20)
+        Me.TextId.TabIndex = 6
         '
-        'TextBox1
+        'TextProducto
         '
-        Me.TextBox1.Location = New System.Drawing.Point(92, 30)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 6
+        Me.TextProducto.Location = New System.Drawing.Point(92, 81)
+        Me.TextProducto.Name = "TextProducto"
+        Me.TextProducto.Size = New System.Drawing.Size(100, 20)
+        Me.TextProducto.TabIndex = 8
         '
-        'TextBox2
+        'TextDescripcion
         '
-        Me.TextBox2.Location = New System.Drawing.Point(92, 55)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 7
+        Me.TextDescripcion.Location = New System.Drawing.Point(92, 110)
+        Me.TextDescripcion.Name = "TextDescripcion"
+        Me.TextDescripcion.Size = New System.Drawing.Size(100, 20)
+        Me.TextDescripcion.TabIndex = 9
         '
-        'TextBox3
+        'TextCantidad
         '
-        Me.TextBox3.Location = New System.Drawing.Point(92, 81)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 8
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(92, 110)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 9
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(92, 138)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox5.TabIndex = 10
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(92, 164)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox6.TabIndex = 11
+        Me.TextCantidad.Location = New System.Drawing.Point(92, 138)
+        Me.TextCantidad.Name = "TextCantidad"
+        Me.TextCantidad.Size = New System.Drawing.Size(100, 20)
+        Me.TextCantidad.TabIndex = 10
         '
         'Label7
         '
@@ -155,12 +130,12 @@ Partial Class Productos2
         Me.Label7.TabIndex = 12
         Me.Label7.Text = "Precio Compra"
         '
-        'TextBox7
+        'TextPrecioCompra
         '
-        Me.TextBox7.Location = New System.Drawing.Point(368, 30)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox7.TabIndex = 13
+        Me.TextPrecioCompra.Location = New System.Drawing.Point(368, 30)
+        Me.TextPrecioCompra.Name = "TextPrecioCompra"
+        Me.TextPrecioCompra.Size = New System.Drawing.Size(100, 20)
+        Me.TextPrecioCompra.TabIndex = 13
         '
         'Label8
         '
@@ -207,59 +182,68 @@ Partial Class Productos2
         Me.Label12.TabIndex = 18
         Me.Label12.Text = "ID Proveedor"
         '
-        'TextBox8
+        'TextPrecioVenta
         '
-        Me.TextBox8.Location = New System.Drawing.Point(368, 55)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox8.TabIndex = 19
+        Me.TextPrecioVenta.Location = New System.Drawing.Point(368, 55)
+        Me.TextPrecioVenta.Name = "TextPrecioVenta"
+        Me.TextPrecioVenta.Size = New System.Drawing.Size(100, 20)
+        Me.TextPrecioVenta.TabIndex = 19
         '
-        'TextBox9
+        'TextPrecioxmayor
         '
-        Me.TextBox9.Location = New System.Drawing.Point(368, 83)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox9.TabIndex = 20
+        Me.TextPrecioxmayor.Location = New System.Drawing.Point(368, 83)
+        Me.TextPrecioxmayor.Name = "TextPrecioxmayor"
+        Me.TextPrecioxmayor.Size = New System.Drawing.Size(100, 20)
+        Me.TextPrecioxmayor.TabIndex = 20
         '
-        'TextBox10
+        'TextIva
         '
-        Me.TextBox10.Location = New System.Drawing.Point(368, 110)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox10.TabIndex = 21
+        Me.TextIva.Location = New System.Drawing.Point(368, 110)
+        Me.TextIva.Name = "TextIva"
+        Me.TextIva.Size = New System.Drawing.Size(100, 20)
+        Me.TextIva.TabIndex = 21
         '
-        'TextBox11
+        'TextCantMinInv
         '
-        Me.TextBox11.Location = New System.Drawing.Point(368, 138)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox11.TabIndex = 22
+        Me.TextCantMinInv.Location = New System.Drawing.Point(368, 138)
+        Me.TextCantMinInv.Name = "TextCantMinInv"
+        Me.TextCantMinInv.Size = New System.Drawing.Size(100, 20)
+        Me.TextCantMinInv.TabIndex = 22
         '
-        'TextBox12
+        'Aceptar
         '
-        Me.TextBox12.Location = New System.Drawing.Point(368, 164)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox12.TabIndex = 23
+        Me.Aceptar.Location = New System.Drawing.Point(15, 266)
+        Me.Aceptar.Name = "Aceptar"
+        Me.Aceptar.Size = New System.Drawing.Size(75, 23)
+        Me.Aceptar.TabIndex = 24
+        Me.Aceptar.Text = "Aceptar"
+        Me.Aceptar.UseVisualStyleBackColor = True
         '
-        'Button1
+        'Cancelar
         '
-        Me.Button1.Location = New System.Drawing.Point(15, 266)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 24
-        Me.Button1.Text = "Aceptar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Cancelar.BackColor = System.Drawing.Color.SandyBrown
+        Me.Cancelar.Location = New System.Drawing.Point(386, 266)
+        Me.Cancelar.Name = "Cancelar"
+        Me.Cancelar.Size = New System.Drawing.Size(75, 23)
+        Me.Cancelar.TabIndex = 25
+        Me.Cancelar.Text = "Cancelar"
+        Me.Cancelar.UseVisualStyleBackColor = False
         '
-        'Button2
+        'ComboIdCategoria
         '
-        Me.Button2.BackColor = System.Drawing.Color.SandyBrown
-        Me.Button2.Location = New System.Drawing.Point(368, 292)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 25
-        Me.Button2.Text = "Cancelar"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.ComboIdCategoria.FormattingEnabled = True
+        Me.ComboIdCategoria.Location = New System.Drawing.Point(92, 55)
+        Me.ComboIdCategoria.Name = "ComboIdCategoria"
+        Me.ComboIdCategoria.Size = New System.Drawing.Size(121, 21)
+        Me.ComboIdCategoria.TabIndex = 26
+        '
+        'ComboIdProveedor
+        '
+        Me.ComboIdProveedor.FormattingEnabled = True
+        Me.ComboIdProveedor.Location = New System.Drawing.Point(347, 164)
+        Me.ComboIdProveedor.Name = "ComboIdProveedor"
+        Me.ComboIdProveedor.Size = New System.Drawing.Size(121, 21)
+        Me.ComboIdProveedor.TabIndex = 27
         '
         'Productos2
         '
@@ -267,27 +251,25 @@ Partial Class Productos2
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkOliveGreen
         Me.ClientSize = New System.Drawing.Size(473, 327)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox12)
-        Me.Controls.Add(Me.TextBox11)
-        Me.Controls.Add(Me.TextBox10)
-        Me.Controls.Add(Me.TextBox9)
-        Me.Controls.Add(Me.TextBox8)
+        Me.Controls.Add(Me.ComboIdProveedor)
+        Me.Controls.Add(Me.ComboIdCategoria)
+        Me.Controls.Add(Me.Cancelar)
+        Me.Controls.Add(Me.Aceptar)
+        Me.Controls.Add(Me.TextCantMinInv)
+        Me.Controls.Add(Me.TextIva)
+        Me.Controls.Add(Me.TextPrecioxmayor)
+        Me.Controls.Add(Me.TextPrecioVenta)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.TextBox7)
+        Me.Controls.Add(Me.TextPrecioCompra)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.TextCantidad)
+        Me.Controls.Add(Me.TextDescripcion)
+        Me.Controls.Add(Me.TextProducto)
+        Me.Controls.Add(Me.TextId)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -304,26 +286,24 @@ Partial Class Productos2
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents TextId As System.Windows.Forms.TextBox
+    Friend WithEvents TextProducto As System.Windows.Forms.TextBox
+    Friend WithEvents TextDescripcion As System.Windows.Forms.TextBox
+    Friend WithEvents TextCantidad As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents TextPrecioCompra As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox11 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox12 As System.Windows.Forms.TextBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents TextPrecioVenta As System.Windows.Forms.TextBox
+    Friend WithEvents TextPrecioxmayor As System.Windows.Forms.TextBox
+    Friend WithEvents TextIva As System.Windows.Forms.TextBox
+    Friend WithEvents TextCantMinInv As System.Windows.Forms.TextBox
+    Friend WithEvents Aceptar As System.Windows.Forms.Button
+    Friend WithEvents Cancelar As System.Windows.Forms.Button
+    Friend WithEvents ComboIdCategoria As System.Windows.Forms.ComboBox
+    Friend WithEvents ComboIdProveedor As System.Windows.Forms.ComboBox
 
 End Class
