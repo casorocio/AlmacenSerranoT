@@ -3,7 +3,7 @@ Imports System.Data.SqlClient
 
 Public Class ClientesGrid
     Dim cli As New Clientes
-    Dim conex As New Conexion1
+    Dim conex As New Conexion
 
     Private Sub ClientesGrid_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         cli.LlenarTabla(DataGridView1)

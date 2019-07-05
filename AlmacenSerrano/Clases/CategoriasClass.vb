@@ -1,7 +1,7 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
 Public Class CategoriasClass
-    Inherits Conexion1
+    Inherits Conexion
     Dim Id_ As Integer
     Dim Tipo_ As String
 
@@ -24,7 +24,7 @@ Public Class CategoriasClass
     End Property
 
     'Dim Supplier As New suppliers
-    Dim conex As New Conexion1
+    Dim conex As New Conexion
 
     Public Sub LLenarTabla(ByVal tabla As DataGridView)
         'Dim strComando As String = "select * from dbo.Orders"
@@ -38,7 +38,7 @@ Public Class CategoriasClass
 
     End Sub
     Public Sub Borrar(ByVal SuppliersID As Integer)
-        Dim conex As New Conexion1
+        Dim conex As New Conexion
         conex.Abrir()
         Dim sqlcomando As New SqlCommand("CategoriaBorrar", conex.sqlconexion)
         sqlcomando.CommandType = CommandType.StoredProcedure
@@ -48,7 +48,7 @@ Public Class CategoriasClass
 
     End Sub
     Public Sub Agregar(ByVal Categoria As CategoriasClass)
-        Dim conex As New Conexion1
+        Dim conex As New Conexion
         conex.Abrir()
 
         Dim sqlcomando As New SqlCommand("CategoriaAgregar", conex.sqlconexion)
@@ -62,7 +62,7 @@ Public Class CategoriasClass
 
     Public Sub Modificar(ByVal Categoria As CategoriasClass)
 
-        Dim conex As New Conexion1
+        Dim conex As New Conexion
 
         Dim sqlComando As New SqlCommand("CategoriaModificar", conex.sqlconexion)
         conex.Abrir()
@@ -82,7 +82,7 @@ Public Class CategoriasClass
     End Sub
 
     Public Sub CargarCombo(ByVal combo As ComboBox)
-        Dim conex As New conexion1
+        Dim conex As New Conexion
         conex.Abrir()
 
         Dim objcomando As New SqlCommand("CategoriaCombo", sqlconexion)

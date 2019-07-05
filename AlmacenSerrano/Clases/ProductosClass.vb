@@ -1,7 +1,7 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
 Public Class ProductosClass
-    Inherits Conexion1
+    Inherits Conexion
 
     Dim Id_ As Integer
     Dim Idcategoria_ As Integer
@@ -111,7 +111,7 @@ Public Class ProductosClass
     End Property
 
 
-    Dim conex As New Conexion1
+    Dim conex As New Conexion
 
 
     Public Sub LLenarTabla(ByVal tabla As DataGridView)
@@ -127,7 +127,7 @@ Public Class ProductosClass
     End Sub
     Public Sub Modificar(ByVal Productos As ProductosClass)
 
-        Dim conex As New Conexion1
+        Dim conex As New Conexion
 
         Dim sqlComando As New SqlCommand("ProductosModificar", conex.sqlconexion)
         conex.Abrir()
@@ -152,7 +152,7 @@ Public Class ProductosClass
 
     End Sub
     Public Sub Agregar(ByVal Productos As ProductosClass)
-        Dim conex As New Conexion1
+        Dim conex As New Conexion
         conex.Abrir()
 
         Dim sqlcomando As New SqlCommand("ProductosAgregar", conex.sqlconexion)
@@ -175,7 +175,7 @@ Public Class ProductosClass
 
 
     Public Sub Borrar(ByVal Id As Integer)
-        Dim conex As New Conexion1
+        Dim conex As New Conexion
         conex.Abrir()
         Dim sqlcomando As New SqlCommand("ProductosBorrar", conex.sqlconexion)
         sqlcomando.CommandType = CommandType.StoredProcedure

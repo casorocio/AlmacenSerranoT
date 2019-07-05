@@ -1,7 +1,7 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
 Public Class ProveedoresClass
-    Inherits conexion1
+    Inherits Conexion
 
     Dim Id_ As Integer
     Dim Compania_ As String
@@ -102,7 +102,7 @@ Public Class ProveedoresClass
         End Set
     End Property
 
-    Dim conex As New conexion1
+    Dim conex As New Conexion
 
     Public Sub LLenarTabla(ByVal tabla As DataGridView)
         'Dim strComando As String = "select * from dbo.Orders"
@@ -118,7 +118,7 @@ Public Class ProveedoresClass
 
     Public Sub Modificar(ByVal Proveedores As ProveedoresClass)
 
-        Dim conex As New conexion1
+        Dim conex As New Conexion
 
         Dim sqlComando As New SqlCommand("ProveedoresModificar", conex.sqlconexion)
         conex.Abrir()
@@ -144,7 +144,7 @@ Public Class ProveedoresClass
     End Sub
 
     Public Sub Agregar(ByVal Proveedores As ProveedoresClass)
-        Dim conex As New conexion1
+        Dim conex As New Conexion
         conex.Abrir()
 
         Dim sqlcomando As New SqlCommand("ProveedoresAgregar", conex.sqlconexion)
@@ -166,7 +166,7 @@ Public Class ProveedoresClass
     End Sub
 
     Public Sub Borrar(ByVal Id As Integer)
-        Dim conex As New Conexion1
+        Dim conex As New Conexion
         conex.Abrir()
         Dim sqlcomando As New SqlCommand("ProveedoresBorrar", conex.sqlconexion)
         sqlcomando.CommandType = CommandType.StoredProcedure
@@ -176,7 +176,7 @@ Public Class ProveedoresClass
     End Sub
 
     Public Sub CargarCombo(ByVal combo As ComboBox)
-        Dim conex As New conexion1
+        Dim conex As New Conexion
         conex.Abrir()
 
         Dim objcomando As New SqlCommand("ProveedoresCombo", sqlconexion)

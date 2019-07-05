@@ -3,7 +3,7 @@ Imports System.Data.SqlClient
 Public Class Productos1
 
     Dim Producto As New ProductosClass
-    Dim conex As New Conexion1
+    Dim conex As New Conexion
 
 
     Private Sub Productos1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load

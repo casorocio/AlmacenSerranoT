@@ -3,7 +3,7 @@ Imports System.Data.SqlClient
 Public Class ProveedorServicio2
     Private ProvS_ As ProveedorServicioClass
     Private EsNuevo_ As Boolean
-    Dim conex As New conexion1
+    Dim conex As New Conexion
     Private Property ProveedorServicio() As ProveedorServicioClass
         Get
             Return ProvS_

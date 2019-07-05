@@ -4,7 +4,7 @@ Imports System.Data.SqlClient
 Public Class Productos2
     Private prod_ As ProductosClass
     Private Modificar_ As Boolean
-    Dim conex As New conexion1
+    Dim conex As New Conexion
     Private Property producto() As ProductosClass
         Get
             Return prod_

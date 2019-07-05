@@ -2,7 +2,7 @@
 Imports System.Data.SqlClient
 Public Class Categorias1
     Dim Categoria As New CategoriasClass
-    Dim conex As New Conexion1
+    Dim conex As New Conexion
 
    
 

@@ -1,7 +1,7 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
 Public Class ProveedorServicioClass
-    Inherits conexion1
+    Inherits Conexion
 
     Dim Id_ As Integer
     Dim Tipo_ As String
@@ -102,7 +102,7 @@ Public Class ProveedorServicioClass
         End Set
     End Property
 
-    Dim conex As New conexion1
+    Dim conex As New Conexion
 
     Public Sub LLenarTabla(ByVal tabla As DataGridView)
         'Dim strComando As String = "select * from dbo.Orders"
@@ -118,7 +118,7 @@ Public Class ProveedorServicioClass
 
     Public Sub Modificar(ByVal ProveedorServicio As ProveedorServicioClass)
 
-        Dim conex As New conexion1
+        Dim conex As New Conexion
 
         Dim sqlComando As New SqlCommand("ProveedorServicioModificar", conex.sqlconexion)
         conex.Abrir()
@@ -142,7 +142,7 @@ Public Class ProveedorServicioClass
         conex.cerrar()
     End Sub
     Public Sub Agregar(ByVal ProveedorServicio As ProveedorServicioClass)
-        Dim conex As New conexion1
+        Dim conex As New Conexion
         conex.Abrir()
 
         Dim sqlcomando As New SqlCommand("ProveedorServicioAgregar", conex.sqlconexion)
@@ -163,7 +163,7 @@ Public Class ProveedorServicioClass
     End Sub
 
     Public Sub Borrar(ByVal Id As Integer)
-        Dim conex As New Conexion1
+        Dim conex As New Conexion
         conex.Abrir()
         Dim sqlcomando As New SqlCommand("ProveedorServicioBorrar", conex.sqlconexion)
         sqlcomando.CommandType = CommandType.StoredProcedure

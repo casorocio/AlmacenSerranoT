@@ -4,7 +4,7 @@ Public Class Categorias2
 
     Private Cat_ As CategoriasClass
     Private Modificar_ As Boolean
-    Dim conex As New conexion1
+    Dim conex As New Conexion
     Private Property Categoria() As CategoriasClass
         Get
             Return Cat_

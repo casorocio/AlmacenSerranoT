@@ -2,7 +2,7 @@
 Imports System.Data.SqlClient
 Public Class Proveedores1
     Dim Proveedor As New ProveedoresClass
-    Dim conex As New conexion1
+    Dim conex As New Conexion
     Private Sub Proveedores1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         Proveedor.LLenarTabla(DataGridView1)

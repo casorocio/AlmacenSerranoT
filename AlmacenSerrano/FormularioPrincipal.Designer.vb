@@ -25,12 +25,15 @@ Partial Class FormularioPrincipal
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.ProveedorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.CategoriaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.ProveedorServicioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientesToolStripMenuItem, Me.ProveedorToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientesToolStripMenuItem, Me.ProveedorToolStripMenuItem, Me.ProductosToolStripMenuItem, Me.CategoriaToolStripMenuItem, Me.ProveedorServicioToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(639, 24)
@@ -48,6 +51,24 @@ Partial Class FormularioPrincipal
         Me.ProveedorToolStripMenuItem.Name = "ProveedorToolStripMenuItem"
         Me.ProveedorToolStripMenuItem.Size = New System.Drawing.Size(73, 20)
         Me.ProveedorToolStripMenuItem.Text = "Proveedor"
+        '
+        'ProductosToolStripMenuItem
+        '
+        Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
+        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(73, 20)
+        Me.ProductosToolStripMenuItem.Text = "Productos"
+        '
+        'CategoriaToolStripMenuItem
+        '
+        Me.CategoriaToolStripMenuItem.Name = "CategoriaToolStripMenuItem"
+        Me.CategoriaToolStripMenuItem.Size = New System.Drawing.Size(70, 20)
+        Me.CategoriaToolStripMenuItem.Text = "Categoria"
+        '
+        'ProveedorServicioToolStripMenuItem
+        '
+        Me.ProveedorServicioToolStripMenuItem.Name = "ProveedorServicioToolStripMenuItem"
+        Me.ProveedorServicioToolStripMenuItem.Size = New System.Drawing.Size(117, 20)
+        Me.ProveedorServicioToolStripMenuItem.Text = "Proveedor Servicio"
         '
         'FormularioPrincipal
         '
@@ -70,4 +91,7 @@ Partial Class FormularioPrincipal
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents ClientesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ProveedorToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ProductosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CategoriaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ProveedorServicioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
