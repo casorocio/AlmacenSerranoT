@@ -175,6 +175,27 @@ Public Class ProveedoresClass
         conex.cerrar()
     End Sub
 
+    Public Sub CargarCombo(ByVal combo As ComboBox)
+        Dim conex As New conexion1
+        conex.Abrir()
+
+        Dim objcomando As New SqlCommand("ProveedoresCombo", sqlconexion)
+        objcomando.CommandType = CommandType.StoredProcedure
+        Dim objdatatable As New Data.DataTable
+        Dim objdataadapter As New SqlDataAdapter(objcomando)
+        objdataadapter.Fill(objdatatable)
+
+        With combo
+            .DataSource = objdatatable
+            .DisplayMember = "Compania"
+            .ValueMember = "Id"
+
+        End With
+
+        conex.cerrar()
+
+
+    End Sub
 
 
 End Class

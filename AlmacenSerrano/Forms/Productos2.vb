@@ -37,6 +37,8 @@ Public Class Productos2
         TextCantidad.Text = producto.Cantidad
         categoria.CargarCombo(ComboIdCategoria)
         ComboIdCategoria.SelectedValue = producto.Idcategoria
+        categoria.CargarCombo(ComboIdProveedor)
+        ComboIdProveedor.SelectedValue = producto.Idproveedor
         TextProducto.Text = producto.Producto
         TextDescripcion.Text = producto.Descripcion
         TextPrecioVenta.Text = producto.Preciounitventa
